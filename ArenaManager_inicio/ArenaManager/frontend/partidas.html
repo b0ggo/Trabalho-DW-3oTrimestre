@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Partidas | ArenaManager</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="partidas">
+  <header class="topo">
+    <div class="topo-interno">
+      <span class="marca">ArenaManager</span>
+      <nav id="menu" aria-label="Menu principal"></nav>
+    </div>
+  </header>
+  <main>
+    <h1>Partidas</h1>
+    <p class="sub">Organize os jogos e registre os placares.</p>
+    <div id="aviso" class="aviso" role="status" hidden></div>
+    <div class="painel">
+      <label>Campeonato
+        <select id="campeonato"></select>
+      </label>
+    </div>
+    <form id="form-partida" class="linha-form painel" style="margin-top:1rem">
+      <label>Mandante
+        <select name="mandante" required></select>
+      </label>
+      <label>Visitante
+        <select name="visitante" required></select>
+      </label>
+      <label>Data
+        <input type="date" name="data" required>
+      </label>
+      <label>Horário
+        <input type="time" name="horario" required>
+      </label>
+      <button type="submit">Salvar partida</button>
+    </form>
+    <h2>Partidas do campeonato</h2>
+    <div class="rolagem">
+      <table>
+        <thead><tr><th>Data</th><th>Mandante</th><th class="num">Placar</th><th>Visitante</th><th>Ações</th></tr></thead>
+        <tbody id="lista"></tbody>
+      </table>
+    </div>
+  </main>
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

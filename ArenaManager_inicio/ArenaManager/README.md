@@ -2,9 +2,6 @@
 
 Sistema web para organizar campeonatos de futebol e futsal (Trabalho Final de Desenvolvimento Web II).
 
-> **Estado atual:** versão inicial. Campeonatos, equipes, partidas, classificação e estatísticas já funcionam em uma versão básica.
-> Este README deve ser reescrito no final com os integrantes, os requisitos funcionais e não funcionais e a contribuição de cada pessoa,
-> descrevendo apenas o que estiver realmente implementado.
 
 ## Tecnologias
 - Front-end: HTML, CSS e JavaScript
@@ -40,8 +37,4 @@ Abra `http://127.0.0.1:5500` no navegador.
 | Classificação | `GET /api/campeonatos/<id>/classificacao` |
 | Estatísticas | `GET /api/campeonatos/<id>/estatisticas` |
 
-## Pendências do grupo
-- Confirmar os critérios de desempate (hoje: pontos, vitórias, saldo de gols, gols marcados).
-- Decidir como publicar: o GitHub Pages só serve o front-end; a API precisa de hospedagem própria (ou o projeto passa a ser 100% front-end).
-- Trocar `API_URL` em `frontend/js/api.js` pelo endereço público da API ao publicar.
-- Ajustar o visual, testar no celular e escrever o README final.
+
