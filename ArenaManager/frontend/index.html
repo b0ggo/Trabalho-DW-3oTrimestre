@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Início | ArenaManager</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="index">
+  <header class="topo">
+    <div class="topo-interno">
+      <span class="marca">ArenaManager</span>
+      <nav id="menu" aria-label="Menu principal"></nav>
+    </div>
+  </header>
+  <main>
+    <h1>Início</h1>
+    <p class="sub">Visão geral dos campeonatos, equipes e partidas cadastrados.</p>
+    <div id="aviso" class="aviso" role="status" hidden></div>
+    <div class="cartoes">
+      <div class="cartao-dado"><strong id="total-campeonatos">0</strong><span>campeonatos</span></div>
+      <div class="cartao-dado"><strong id="total-equipes">0</strong><span>equipes</span></div>
+      <div class="cartao-dado"><strong id="total-partidas">0</strong><span>partidas</span></div>
+      <div class="cartao-dado"><strong id="total-jogadas">0</strong><span>partidas com placar</span></div>
+    </div>
+    <div id="painel-dados" class="painel" hidden style="margin-top:1rem">
+      <p style="margin:0 0 0.75rem">Os dados cadastrados ficam salvos neste navegador. Use os botões para testar o sistema ou recomeçar.</p>
+      <div class="acoes-linha">
+        <button type="button" id="btn-exemplo">Carregar dados de exemplo</button>
+        <button type="button" id="btn-limpar" class="perigo">Apagar todos os dados</button>
+      </div>
+    </div>
+    <h2>Campeonatos recentes</h2>
+    <div class="rolagem">
+      <table>
+        <thead><tr><th>Nome</th><th>Modalidade</th></tr></thead>
+        <tbody id="lista-recentes"></tbody>
+      </table>
+    </div>
+  </main>
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

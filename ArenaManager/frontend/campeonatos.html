@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campeonatos | ArenaManager</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="campeonatos">
+  <header class="topo">
+    <div class="topo-interno">
+      <span class="marca">ArenaManager</span>
+      <nav id="menu" aria-label="Menu principal"></nav>
+    </div>
+  </header>
+  <main>
+    <h1>Campeonatos</h1>
+    <p class="sub">Cadastre, edite e exclua os campeonatos.</p>
+    <div id="aviso" class="aviso" role="status" hidden></div>
+    <form id="form-campeonato" class="linha-form painel">
+      <label>Nome
+        <input name="nome" required maxlength="80">
+      </label>
+      <label>Modalidade
+        <select name="modalidade" required>
+          <option value="futebol">Futebol</option>
+          <option value="futsal">Futsal</option>
+        </select>
+      </label>
+      <button type="submit">Salvar campeonato</button>
+    </form>
+    <h2>Campeonatos cadastrados</h2>
+    <div class="rolagem">
+      <table>
+        <thead><tr><th>Nome</th><th>Modalidade</th><th>Ações</th></tr></thead>
+        <tbody id="lista"></tbody>
+      </table>
+    </div>
+  </main>
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
