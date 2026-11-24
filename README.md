@@ -5,6 +5,16 @@ Sistema web para organizar campeonatos de futebol e futsal. Trabalho Final de De
 - **Site publicado:** https://b0ggo.github.io/Trabalho-DW-3oTrimestre/
 - **Repositório:** https://github.com/b0ggo/Trabalho-DW-3oTrimestre
 
+## Integrantes e participação
+
+| Integrante | Participação |
+| --- | --- |
+| Italo | ajudou nas ideias e tentou ajudar no front e back |
+| Tiago |  |
+| Miguel | [fez alguns arquivos do back end] |
+| João Braatz | [Quase todo o trabalho] |
+| João Batista | [ajudou a criar a ideia do trabalho] |
+| João Berta | |
 
 ## Tema, objetivo e público-alvo
 
